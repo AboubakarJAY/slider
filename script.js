@@ -5,7 +5,6 @@ let activeLink = 0;
 for (let i = 0; i < links.length; i++) {
   let link = links[i];
   link.addEventListener("click", setClickedItem);
-  link.itemID = i;
 }
 
 links[activeLink].classList.add("active");
@@ -13,7 +12,6 @@ links[activeLink].classList.add("active");
 function setClickedItem(e) {
   removeActiveLinks();
   let clickedLink = e.target;
-  activeLink = clickedLink.itemID;
   changePosition(clickedLink);
 }
 function removeActiveLinks() {
