@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="flex items-center flex-col">
+    <h1 class="text-blue-300 text-5xl font-black text-center">
+      Sweet content slider
+    </h1>
+
+    <div
+      id="contentContainer"
+      class="w-[550px] h-[350px] border-[5px] border-black overflow-hidden"
+    >
+      <div
+        id="wrapper"
+        class="w-[2200px] translate-3d transition delay-300 ease-in-out"
+      >
+        <div
+          id="itemOne"
+          class="content w-[550px] h-[350px] bg-no-repeat bg-[#0099cc] bg-[url(https://www.kirupa.com/images/blueSquare.png)]"
+        ></div>
+        <div
+          id="itemTwo"
+          class="content content w-[550px] h-[350px] bg-no-repeat bg-[#ffcc00] bg-[url(https://www.kirupa.com/images/yellowSquare.png)]"
+        ></div>
+        <div
+          id="itemThree"
+          class="content content w-[550px] h-[350px] bg-no-repeat bg-[#ff6666] bg-[url(url(https://www.kirupa.com/images/pinkSquare.png))]"
+        ></div>
+        <div
+          id="itemFour"
+          class="content content w-[550px] h-[350px] bg-no-repeat bg-[#e8e8e8] url(https://www.kirupa.com/images/graySquare.png)"
+        ></div>
+      </div>
+    </div>
+
+    <div id="navLinks">
+      <ul>
+        <li class="itemLinks" data-pos="0px"></li>
+        <li class="itemLinks" data-pos="-550px"></li>
+        <li class="itemLinks" data-pos="-1100px"></li>
+        <li class="itemLinks" data-pos="-1650px"></li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
