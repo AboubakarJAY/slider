@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+#navLinks ul li.active:hover {
+  background-color: #484848;
+  color: #ffffff;
+}
+
+#navLinks ul li.active {
+  background-color: #333333;
+  color: #ffffff;
+  outline-width: 7px;
+}
+
+/* #wrapper {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s ease-in-out;
+} */
